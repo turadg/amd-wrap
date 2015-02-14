@@ -1,22 +1,30 @@
 {
-    "name": "amd-wrap",
-    "description": "Wraps CommonJS files in `define(function (require, exports, module) { ... })`.",
-    "keywords": ["amd", "commonjs", "modules", "build"],
-    "version": "1.1.0",
-    "author": "Domenic Denicola <domenic@domenicdenicola.com> (http://domenic.me/)",
-    "license": "WTFPL",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/domenic/amd-wrap.git"
-    },
-    "bugs": "http://github.com/domenic/amd-wrap/issues",
-    "main": "lib/amd-wrap.js",
-    "scripts": {
-        "test": "mocha",
-        "lint": "jshint lib"
-    },
-    "devDependencies": {
-        "jshint": "~2.4.4",
-        "mocha": "~1.18.2"
-    }
+  "name": "amd-wrap-legacy",
+  "description": "Wraps CommonJS-style RequireJS files in `define(function (require, exports, module) { ... })`.",
+  "keywords": [
+    "amd",
+    "commonjs",
+    "modules",
+    "build"
+  ],
+  "version": "0.1.0",
+  "author": "Turadg Aleahmad <turadg@coursera.org> (http://turadg.aleahmad.net/)",
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/turadg/amd-wrap-legacy.git"
+  },
+  "bugs": "http://github.com/turadg/amd-wrap-legacy/issues",
+  "main": "lib/amd-wrap-legacy.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "jshint lib"
+  },
+  "devDependencies": {
+    "jshint": "~2.4.4",
+    "mocha": "~1.18.2"
+  },
+  "dependencies": {
+    "strip-comments": "^0.3.2"
+  }
 }
