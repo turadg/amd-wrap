@@ -21,6 +21,13 @@ specify("It wraps correctly event with block comments", function () {
     assert.strictEqual(output, expected);
 });
 
+specify("It doesn't wrap an AMD module in the function(window) style", function () {
+    var input = fs.readFileSync(path.resolve(__dirname, "fixtures/windowStyle.js"), "utf-8");
+    var output = amdWrap(input);
+
+    assert.strictEqual(output, input);
+});
+
 specify("It doesn't re-wrap when the string is already wrapped", function () {
     var input = fs.readFileSync(path.resolve(__dirname, "fixtures/last.amd.js"), "utf-8");
     var output = amdWrap(input);

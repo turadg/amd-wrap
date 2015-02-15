@@ -17,7 +17,7 @@
   "bugs": "http://github.com/turadg/amd-wrap-legacy/issues",
   "main": "lib/amd-wrap-legacy.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha -R spec",
     "lint": "jshint lib"
   },
   "devDependencies": {
