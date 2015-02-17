@@ -35,8 +35,8 @@ specify("It doesn't re-wrap when the string is already wrapped", function () {
     assert.strictEqual(output, input);
 });
 
-specify("It doesn't re-wrap when the string is already wrapped without space", function () {
-    var input = fs.readFileSync(path.resolve(__dirname, "fixtures/prewrappedSansSpace.js"), "utf-8");
+specify("It doesn't re-wrap when the string is already wrapped with space", function () {
+    var input = fs.readFileSync(path.resolve(__dirname, "fixtures/prewrappedWithSpace.js"), "utf-8");
     var output = amdWrap(input);
 
     assert.strictEqual(output, input);

@@ -23,10 +23,9 @@ Line numbers will line up, although the first column will be shifted by
 
 ## Difference from amd-wrap
 
-This is similar to amd-wrap but adds features that can help transition from a non-CommonJS style RequireJS codebase.
+This is similar to [amd-wrap](https://www.npmjs.com/package/amd-wrap) but adds features that can help transition from a non-CommonJS style RequireJS codebase.
 
 It will not wrap if:
 - the file is already wrapped
-- the file begins with function(
+- the file begins with function( that suggests a module on Window
 - the file starts with a comment `// amd-wrap:disable`
-- the file matches an ignore pattern in ./.amdwrapignore
