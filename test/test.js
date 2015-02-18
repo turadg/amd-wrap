@@ -49,6 +49,13 @@ specify("It doesn't re-wrap when the string has a define that includes named dep
     assert.strictEqual(output, input);
 });
 
+specify("It doesn't re-wrap when the string has a define that is just a literal", function () {
+    var input = fs.readFileSync(path.resolve(__dirname, "fixtures/prewrappedLiteral.js"), "utf-8");
+    var output = amdWrap(input);
+
+    assert.strictEqual(output, input);
+});
+
 xspecify("It doesn't re-wrap when the string is already wrapped, with comments at top", function () {
     var input = fs.readFileSync(path.resolve(__dirname, "fixtures/prewrappedWithComments.js"), "utf-8");
     var output = amdWrap(input);
