@@ -29,3 +29,6 @@ It will not wrap if:
 - the file is already wrapped
 - the file begins with function( that suggests a module on Window
 - the file starts with a comment `// amd-wrap:disable`
+
+Limitations:
+- if comments preceded the require() or define(), it will wrap (I tried strip-comments lib, but [it chokes](https://github.com/jonschlinkert/strip-comments/issues/18) in some cases, and the only reliable solution is a parser, which seems like overkill)

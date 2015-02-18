@@ -42,7 +42,7 @@ specify("It doesn't re-wrap when the string is already wrapped with space", func
     assert.strictEqual(output, input);
 });
 
-specify("It doesn't re-wrap when the string is already wrapped, with comments at top", function () {
+xspecify("It doesn't re-wrap when the string is already wrapped, with comments at top", function () {
     var input = fs.readFileSync(path.resolve(__dirname, "fixtures/prewrappedWithComments.js"), "utf-8");
     var output = amdWrap(input);
 

@@ -7,7 +7,7 @@
     "modules",
     "build"
   ],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Turadg Aleahmad <turadg@coursera.org> (http://turadg.aleahmad.net/)",
   "license": "WTFPL",
   "repository": {
@@ -23,8 +23,5 @@
   "devDependencies": {
     "jshint": "~2.4.4",
     "mocha": "~1.18.2"
-  },
-  "dependencies": {
-    "strip-comments": "^0.3.2"
   }
 }
